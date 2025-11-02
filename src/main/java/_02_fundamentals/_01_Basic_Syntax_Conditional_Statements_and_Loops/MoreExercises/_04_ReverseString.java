@@ -1,4 +1,4 @@
-﻿package _02_fundamentals._01_Basic_Syntax_Conditional_Statements_and_Loops.MoreExercises;
+package _02_fundamentals._01_Basic_Syntax_Conditional_Statements_and_Loops.MoreExercises;
 
 public class _04_ReverseString {
     public static void main(String[] args) {

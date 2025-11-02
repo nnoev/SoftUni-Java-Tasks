@@ -1,4 +1,4 @@
-﻿package _04_oop._03_Inheritance.Exercises;
+package _04_oop._03_Inheritance.Exercises;
 
 public class _02_Zoo {
     public static void main(String[] args) {

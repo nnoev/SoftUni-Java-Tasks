@@ -1,4 +1,4 @@
-﻿package _03_advanced._02_Multidimensional_Arrays.Exercises;
+package _03_advanced._02_Multidimensional_Arrays.Exercises;
 
 public class _09_RadioactiveMutantVampireBunnies {
     public static void main(String[] args) {

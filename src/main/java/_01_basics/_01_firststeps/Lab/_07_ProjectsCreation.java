@@ -1,7 +1,12 @@
-﻿package _01_basics._01_firststeps.Lab;
+package _01_basics._01_firststeps.Lab;
+
+import java.util.Scanner;
 
 public class _07_ProjectsCreation {
     public static void main(String[] args) {
-        // TODO: Add code
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        int projects = Integer.parseInt(scanner.nextLine());
+        System.out.printf("The architect %s will need %d hours to complete %d project/s.",name,projects*3,projects);
     }
 }

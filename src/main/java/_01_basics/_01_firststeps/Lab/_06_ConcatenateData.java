@@ -1,7 +1,14 @@
-﻿package _01_basics._01_firststeps.Lab;
+package _01_basics._01_firststeps.Lab;
+
+import java.util.Scanner;
 
 public class _06_ConcatenateData {
     public static void main(String[] args) {
-        // TODO: Add code
+       Scanner scanner = new Scanner(System.in);
+       String firstName = scanner.nextLine();
+       String lastName = scanner.nextLine();
+       int age = Integer.parseInt(scanner.nextLine());
+       String town = scanner.nextLine();
+        System.out.printf("You are %s %s, a %d-years old person from %s.",firstName,lastName,age,town);
     }
 }

@@ -1,7 +1,13 @@
-﻿package _01_basics._01_firststeps.Lab;
+package _01_basics._01_firststeps.Lab;
+
+import java.util.Scanner;
 
 public class _05_GreetingByName {
     public static void main(String[] args) {
-        // TODO: Add code
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        System.out.println("Hello " + name + "!");
+
+
     }
 }

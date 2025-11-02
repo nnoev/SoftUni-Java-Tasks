@@ -1,4 +1,4 @@
-﻿package _04_oop._06_Reflection.Exercises;
+package _04_oop._06_Reflection.Exercises;
 
 public class _03_BarracksWarsANewFactory {
     public static void main(String[] args) {
