@@ -1,7 +1,14 @@
 package _01_basics._01_firststeps.MoreExercises;
 
+import java.util.Scanner;
+
 public class _01_TrapezoidArea {
     public static void main(String[] args) {
-        // TODO: Add code
+        Scanner scanner = new Scanner(System.in);
+        double b1 =Double.parseDouble(scanner.nextLine());
+        double b2 =Double.parseDouble(scanner.nextLine());
+        double h =Double.parseDouble(scanner.nextLine());
+        double area = (b1+b2)*h/2;
+        System.out.printf("%.2f",area);
     }
 }
