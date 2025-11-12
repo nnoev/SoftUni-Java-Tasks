@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/_01_basics/_01_firststeps/exercises/asdf.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/_01_basics/_06_loops_nested/exercises/_05_SpecialNumbers.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/_04_oop/_07_Exceptions_and_Error_Handling/_01_NumberInRange.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
