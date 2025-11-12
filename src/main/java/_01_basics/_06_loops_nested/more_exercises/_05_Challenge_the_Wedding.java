@@ -1,0 +1,7 @@
+package _01_basics._06_loops_nested.more_exercises;
+
+public class _05_Challenge_the_Wedding {
+    public static void main(String[] args) {
+
+    }
+}
