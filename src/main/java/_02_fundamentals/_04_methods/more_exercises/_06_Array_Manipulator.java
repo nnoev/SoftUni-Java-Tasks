@@ -1,7 +1,7 @@
 package _02_fundamentals._04_methods.more_exercises;
 
 public class _06_Array_Manipulator {
-    static void main(String[] args) {
+public static void main(String[] args) {
 
     }
 }

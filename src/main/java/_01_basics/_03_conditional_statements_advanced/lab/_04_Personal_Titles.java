@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.lab;
 import java.util.Scanner;
 
 public class _04_Personal_Titles {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double age = Double.parseDouble(scanner.nextLine());
         String sex = scanner.nextLine();

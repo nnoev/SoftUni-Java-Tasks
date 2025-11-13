@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.exercises;
 import java.util.Scanner;
 
 public class _04_Fishing_Boat {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int budget = Integer.parseInt(scanner.nextLine());
         String season = scanner.nextLine();

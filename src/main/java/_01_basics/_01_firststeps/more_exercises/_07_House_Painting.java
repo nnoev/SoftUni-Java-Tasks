@@ -3,7 +3,7 @@ package _01_basics._01_firststeps.more_exercises;
 import java.util.Scanner;
 
 public class _07_House_Painting {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double x =Double.parseDouble(scanner.nextLine());
         double y =Double.parseDouble(scanner.nextLine());

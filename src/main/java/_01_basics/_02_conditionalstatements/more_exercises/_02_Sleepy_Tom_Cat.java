@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.more_exercises;
 import java.util.Scanner;
 
 public class _02_Sleepy_Tom_Cat {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int holidays = Integer.parseInt(scanner.nextLine());

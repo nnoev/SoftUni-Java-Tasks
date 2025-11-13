@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.exercises;
 import java.util.Scanner;
 
 public class _05_Journey {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double budget = Double.parseDouble(scanner.nextLine());
         String season = scanner.nextLine();

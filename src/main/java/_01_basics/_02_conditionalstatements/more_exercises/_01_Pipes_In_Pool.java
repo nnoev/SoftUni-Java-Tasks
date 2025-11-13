@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.more_exercises;
 import java.util.Scanner;
 
 public class _01_Pipes_In_Pool {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int V = Integer.parseInt(scanner.nextLine());
         int p1 = Integer.parseInt(scanner.nextLine());

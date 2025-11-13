@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.exercises;
 import java.util.Scanner;
 
 public class _02_Bonus_Score {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = Integer.parseInt(scanner.nextLine());
         double bonus = 0;

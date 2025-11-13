@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.lab;
 import java.util.Scanner;
 
 public class _01_Day_of_Week {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int first = Integer.parseInt(scanner.nextLine());
         switch (first) {

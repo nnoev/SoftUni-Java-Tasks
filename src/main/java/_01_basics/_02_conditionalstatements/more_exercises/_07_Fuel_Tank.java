@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.more_exercises;
 import java.util.Scanner;
 
 public class _07_Fuel_Tank {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String fuelType = scanner.nextLine();

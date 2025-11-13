@@ -1,7 +1,7 @@
 package _01_basics._01_firststeps.lab;
 
 public class _02_Nums_1_to_10 {
-    static void main(String[] args) {
+public static void main(String[] args) {
         System.out.println(1);
         System.out.println(2);
         System.out.println(3);

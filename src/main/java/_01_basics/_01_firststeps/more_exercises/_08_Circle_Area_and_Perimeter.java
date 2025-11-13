@@ -3,7 +3,7 @@ package _01_basics._01_firststeps.more_exercises;
 import java.util.Scanner;
 
 public class _08_Circle_Area_and_Perimeter {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double r =Double.parseDouble(scanner.nextLine());
         double calculatedArea = Math.PI*r*r;

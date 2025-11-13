@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.exercises;
 import java.util.Scanner;
 
 public class _04_Toy_Shop {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double price = Double.parseDouble(scanner.nextLine());
         int puzzle = Integer.parseInt(scanner.nextLine());

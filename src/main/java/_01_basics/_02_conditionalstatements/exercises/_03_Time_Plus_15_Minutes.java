@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.exercises;
 import java.util.Scanner;
 
 public class _03_Time_Plus_15_Minutes {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int h = Integer.parseInt(scanner.nextLine());
         int m = Integer.parseInt(scanner.nextLine());

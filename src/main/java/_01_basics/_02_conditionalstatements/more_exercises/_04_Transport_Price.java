@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.more_exercises;
 import java.util.Scanner;
 
 public class _04_Transport_Price {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());

@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.lab;
 import java.util.Scanner;
 
 public class _06_Number_in_Range {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int number = Integer.parseInt(scanner.nextLine());

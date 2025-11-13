@@ -3,7 +3,7 @@ package _01_basics._01_firststeps.more_exercises;
 import java.util.Scanner;
 
 public class _10_Weather_Forecast_Part_2 {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         double n =Double.parseDouble(scanner.nextLine());

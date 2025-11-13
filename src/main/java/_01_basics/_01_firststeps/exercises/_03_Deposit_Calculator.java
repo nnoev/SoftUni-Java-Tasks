@@ -3,7 +3,7 @@ package _01_basics._01_firststeps.exercises;
 import java.util.Scanner;
 
 public class _03_Deposit_Calculator {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double number = Double.parseDouble(scanner.nextLine());
         int n = Integer.parseInt(scanner.nextLine());

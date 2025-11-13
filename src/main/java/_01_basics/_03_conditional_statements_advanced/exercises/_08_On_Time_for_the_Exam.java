@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.exercises;
 import java.util.Scanner;
 
 public class _08_On_Time_for_the_Exam {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int Exam_hour = Integer.parseInt(scanner.nextLine());
         int Exam_min = Integer.parseInt(scanner.nextLine());

@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.exercises;
 import java.util.Scanner;
 
 public class _05_Godzilla_vs_Kong {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double budget = Double.parseDouble(scanner.nextLine());
         int statists = Integer.parseInt(scanner.nextLine());

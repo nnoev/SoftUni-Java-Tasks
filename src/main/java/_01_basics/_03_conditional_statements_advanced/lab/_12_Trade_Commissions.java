@@ -3,7 +3,7 @@ package _01_basics._03_conditional_statements_advanced.lab;
 import java.util.Scanner;
 
 public class _12_Trade_Commissions {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String city = scanner.nextLine();
         double sales = Double.parseDouble(scanner.nextLine());

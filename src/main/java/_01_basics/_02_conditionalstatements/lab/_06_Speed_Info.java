@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.lab;
 import java.util.Scanner;
 
 public class _06_Speed_Info {
-    static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double a = Double.parseDouble(scanner.nextLine());
         if (a <= 10) {

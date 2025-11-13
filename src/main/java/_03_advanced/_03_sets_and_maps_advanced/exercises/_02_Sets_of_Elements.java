@@ -1,7 +1,7 @@
 package _03_advanced._03_sets_and_maps_advanced.exercises;
 
 public class _02_Sets_of_Elements {
-    static void main(String[] args) {
+public static void main(String[] args) {
 
     }
 }
