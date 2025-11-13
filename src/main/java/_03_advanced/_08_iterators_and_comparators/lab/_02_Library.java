@@ -1,7 +1,7 @@
 package _03_advanced._08_iterators_and_comparators.lab;
 
 public class _02_Library {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
     }
 }

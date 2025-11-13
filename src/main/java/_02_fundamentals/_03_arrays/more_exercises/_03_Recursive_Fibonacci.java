@@ -1,7 +1,7 @@
 package _02_fundamentals._03_arrays.more_exercises;
 
 public class _03_Recursive_Fibonacci {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
     }
 }

@@ -3,7 +3,7 @@ package _01_basics._02_conditionalstatements.lab;
 import java.util.Scanner;
 
 public class _07_Area_of_Figures {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String a = scanner.nextLine();
         if (a.equals("square")) {

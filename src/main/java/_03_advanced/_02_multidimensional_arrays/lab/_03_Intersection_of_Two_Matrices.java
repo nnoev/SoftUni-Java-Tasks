@@ -1,7 +1,7 @@
 package _03_advanced._02_multidimensional_arrays.lab;
 
 public class _03_Intersection_of_Two_Matrices {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
     }
 }
