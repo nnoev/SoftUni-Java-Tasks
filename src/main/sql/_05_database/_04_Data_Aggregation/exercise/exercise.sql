@@ -48,63 +48,150 @@ LIMIT 1
 -- Task 05: Deposits Sum
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+    deposit_group, SUM(deposit_amount) AS total
+FROM
+    wizzard_deposits
+GROUP BY deposit_group
+ORDER BY total
+
+;
 
 
 -- =========================================
 -- Task 06: Deposits Sum for Ollivander Family
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+    deposit_group, SUM(deposit_amount) AS total
+FROM
+    wizzard_deposits
+WHERE
+    magic_wand_creator = 'Ollivander family'
+GROUP BY deposit_group
+ORDER BY deposit_group
+
+;
 
 
 -- =========================================
 -- Task 07: Deposits Filter
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+    deposit_group, SUM(deposit_amount) AS total
+FROM
+    wizzard_deposits
+WHERE
+    magic_wand_creator = 'Ollivander family'
+GROUP BY deposit_group
+having total < 150000
+ORDER BY total desc
+
+;
 
 
 -- =========================================
 -- Task 08: Deposit Charge
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+    deposit_group,magic_wand_creator, min(deposit_charge)
+FROM
+    wizzard_deposits
+GROUP BY deposit_group,magic_wand_creator
+order by magic_wand_creator,deposit_group
+;
 
 
 -- =========================================
 -- Task 09: Age Groups
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+    CASE
+        WHEN age >= 0 AND age <= 10 THEN '[0-10]'
+        WHEN age >= 11 AND age <= 20 THEN '[11-20]'
+        WHEN age >= 21 AND age <= 30 THEN '[21-30]'
+        WHEN age >= 31 AND age <= 40 THEN '[31-40]'
+        WHEN age >= 41 AND age <= 50 THEN '[41-50]'
+        WHEN age >= 51 AND age <= 60 THEN '[51-60]'
+        WHEN age >= 61 THEN '[61+]'
+    END AS age_group,
+    COUNT(*)
+FROM
+    wizzard_deposits
+GROUP BY age_group
+  order by age_group
+;
 
 
 -- =========================================
 -- Task 10: First Letter
 -- =========================================
 
--- Write your SQL query here
+SELECT DISTINCT
+left(first_name,1) letter
+from wizzard_deposits
+WHERE deposit_group = 'Troll Chest'
+order by letter
+;
 
 
 -- =========================================
 -- Task 11: Average Interest
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+    deposit_group, is_deposit_expired, AVG(deposit_interest)
+FROM
+    wizzard_deposits
+WHERE
+    deposit_start_date > '1985-01-01'
+GROUP BY deposit_group , is_deposit_expired
+ORDER BY deposit_group DESC , is_deposit_expired ASC
+
+;
 
 
 -- =========================================
 -- Task 12: Employees Minimum Salaries
 -- =========================================
 
--- Write your SQL query here
+SELECT 
+   department_id,  MIN(salary)
+FROM
+    employees
+    WHERE department_id in (2,5,7) and hire_date>'2000-01-01'
+group by department_id
+;
 
 
 -- =========================================
 -- Task 13: Employees Average Salaries
 -- =========================================
 
--- Write your SQL query here
+CREATE TABLE high_salary AS SELECT * FROM
+    employees
+WHERE
+    salary > 30000
+;
+DELETE FROM high_salary 
+WHERE
+    manager_id = 42;
+    UPDATE high_salary 
+SET 
+    salary = salary + 5000
+WHERE
+    department_id = 1;
+    
+SELECT 
+    department_id, AVG(salary)
+FROM
+    high_salary
+GROUP BY department_id
+ORDER BY department_id
+;
 
 
 -- =========================================
