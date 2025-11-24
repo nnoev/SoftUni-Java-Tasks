@@ -198,32 +198,67 @@ ORDER BY department_id
 -- Task 14: Employees Maximum Salaries
 -- =========================================
 
--- Write your SQL query here
-
+SELECT department_id, max(salary) high
+from employees
+GROUP BY department_id
+HAVING high < 30000 or high>70000
+ORDER BY department_id;
 
 -- =========================================
 -- Task 15: Employees Count Salaries
 -- =========================================
 
--- Write your SQL query here
+SELECT count(salary)
+from employees
+where manager_id is NULL;
 
 
 -- =========================================
 -- Task 16: 3rd Highest Salary
 -- =========================================
 
--- Write your SQL query here
+SELECT *
+FROM (
+    SELECT
+        department_id,
+        (
+            SELECT DISTINCT salary
+            FROM employees e2
+            WHERE e1.department_id = e2.department_id
+              AND salary IS NOT NULL
+            ORDER BY salary DESC
+            LIMIT 1 OFFSET 2
+        ) AS third
+    FROM employees AS e1
+    GROUP BY department_id
+) AS t
+WHERE third IS NOT NULL
+ORDER BY department_id;
 
+    
 
 -- =========================================
 -- Task 17: Salary Challenge
 -- =========================================
 
--- Write your SQL query here
+SELECT first_name,last_name,department_id
+FROM employees e1
+WHERE salary>
+(SELECT avg(salary)
+FROM employees e2
+WHERE e1.department_id = e2.department_id)
+ORDER BY department_id,employee_id
+limit 10;
 
 
 -- =========================================
 -- Task 18: Departments Total Salaries
 -- =========================================
 
--- Write your SQL query here
+    SELECT department_id, sum(salary) as total
+    from employees
+    GROUP BY department_id
+    ORDER BY department_id;
+    
+    
+    
