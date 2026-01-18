@@ -200,25 +200,56 @@ LIMIT 5
 -- =========================================
 -- Task 15: Continents and Currencies
 -- =========================================
-SELECT *
-
-from
-(SELECT continent_code, count(currency_code) u , currency_code
-FROM countries
-GROUP BY continent_code,currency_code)as t
-
-
-
+SELECT
+    continent_code, currency_code, COUNT(*) AS currency_usage
+FROM
+    countries c
+GROUP BY continent_code , currency_code
+HAVING COUNT(*) > 1
+    AND COUNT(*) = (SELECT
+        MAX(cnt)
+    FROM
+        (SELECT
+            COUNT(*) AS cnt
+        FROM
+            countries
+        WHERE
+            continent_code = c.continent_code
+        GROUP BY currency_code
+        HAVING COUNT(*) > 1) AS sub)
+ORDER BY continent_code , currency_code;
 
 -- =========================================
 -- Task 16: Countries without any Mountains
 -- =========================================
 
--- Write your SQL query here
-
-
+SELECT
+    COUNT(*)
+FROM
+    countries c
+        LEFT JOIN
+    mountains_countries mc ON c.country_code = mc.country_code
+WHERE
+    mc.mountain_id IS NULL
+;
 -- =========================================
 -- Task 17: Highest Peak and Longest River by Country
 -- =========================================
 
+SELECT
+    c.country_name, MAX(p.elevation) maxp, MAX(r.length) maxr
+FROM
+    countries c
+        LEFT JOIN
+    mountains_countries mc ON c.country_code = mc.country_code
+        LEFT JOIN
+    peaks p ON mc.mountain_id = p.mountain_id
+        LEFT JOIN
+    countries_rivers cr ON c.country_code = cr.country_code
+        LEFT JOIN
+    rivers r ON cr.river_id = r.id
+    GROUP BY c.country_name
+    ORDER BY maxp DESC,maxr DESC,c.country_name DESC
+    LIMIT 5
+    ;
 -- Write your SQL query here
