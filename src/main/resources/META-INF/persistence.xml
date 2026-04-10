@@ -2,13 +2,98 @@
              version="3.0">
 
     <persistence-unit name="myJPA">
-        <class>java_db._04_hibernate_code_first.lab.models.Vehicle</class>
-        <class>java_db._04_hibernate_code_first.lab.models.Car</class>
-        <class>java_db._04_hibernate_code_first.lab.models.Plane</class>
-        <class>java_db._04_hibernate_code_first.lab.models.Bike</class>
-        <class>java_db._04_hibernate_code_first.lab.models.Truck</class>
         <properties>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/code_first?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/mini_orm?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Looneytunes1!"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.archive.autodetection" value="none"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="codeFirst">
+        <class>java_db._04_hibernate_code_first.lab.models.Bike</class>
+        <class>java_db._04_hibernate_code_first.lab.models.Car</class>
+        <class>java_db._04_hibernate_code_first.lab.models.Truck</class>
+        <class>java_db._04_hibernate_code_first.lab.models.Plane</class>
+        <class>java_db._04_hibernate_code_first.lab.models.Vehicle</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/code_first?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Looneytunes1!"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.archive.autodetection" value="none"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="codeFirst_ex">
+        <class>java_db._04_hibernate_code_first.exercises._01_.entities.Gringotts</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/code_first_ex?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Looneytunes1!"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.archive.autodetection" value="none"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="codeFirst_ex02">
+        <class>java_db._04_hibernate_code_first.exercises._02_.entities.BaseEntity</class>
+        <class>java_db._04_hibernate_code_first.exercises._02_.entities.Customer</class>
+        <class>java_db._04_hibernate_code_first.exercises._02_.entities.Product</class>
+        <class>java_db._04_hibernate_code_first.exercises._02_.entities.Sale</class>
+        <class>java_db._04_hibernate_code_first.exercises._02_.entities.StoreLocation</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/code_first_ex02?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Looneytunes1!"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.archive.autodetection" value="none"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="codeFirst_ex03">
+        <class>java_db._04_hibernate_code_first.exercises._03_.entities.Student</class>
+        <class>java_db._04_hibernate_code_first.exercises._03_.entities.Teacher</class>
+        <class>java_db._04_hibernate_code_first.exercises._03_.entities.Course</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/code_first_ex03?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Looneytunes1!"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.archive.autodetection" value="none"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="codeFirst_ex05">
+        <class>java_db._04_hibernate_code_first.exercises._05_.entities.User</class>
+        <class>java_db._04_hibernate_code_first.exercises._05_.entities.BaseBillingDetail</class>
+        <class>java_db._04_hibernate_code_first.exercises._05_.entities.CreditCard</class>
+        <class>java_db._04_hibernate_code_first.exercises._05_.entities.BankAccount</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/code_first_ex05?createDatabaseIfNotExist=true"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
             <property name="jakarta.persistence.jdbc.password" value="Looneytunes1!"/>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("myJPA");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("codeFirst");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
         Bike bike = new Bike();
